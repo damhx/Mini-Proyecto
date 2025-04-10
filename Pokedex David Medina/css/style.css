@@ -109,6 +109,16 @@ button {
     color: var(--clr-black);
 }
 
+body {
+    min-height: 100vh;
+    background-color: var(--clr-gray);
+}
+
+header {
+    padding-block: 1rem;
+    box-shadow: 0 0 2rem -1rem rgba(0, 0, 0, .5);
+}
+
 .nav {
     display: flex;
     flex-direction: column;
