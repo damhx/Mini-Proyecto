@@ -141,6 +141,11 @@ button {
     box-shadow: 0 0 2rem rgba(0, 0, 0, .25);
 }
 
+.btn-header.active {
+    background-color: var(--clr-black);
+    color: var(--clr-white);
+}
+
 main {
     padding: 2rem;
     max-width: 1000px;
@@ -187,6 +192,13 @@ main {
     color: var(--clr-gray);
 }
 
+.pokemon-imagen-container {
+    position: relative;
+    padding-inline: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+
 .pokemon-imagen {
     padding-inline: 1rem;
     display: flex;
@@ -197,6 +209,25 @@ main {
     width: 100%;
     max-width: 6rem;
 }
+
+.btn-favorito {
+    position: absolute;
+    top: 0;
+    right: 1rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+    background: none;
+    border: none;
+    transition: transform 0.2s ease;
+  }
+
+  .btn-favorito:hover {
+    transform: scale(1.2);
+  }
+  
+  .btn-favorito.favorito {
+    color: gold;
+  }
 
 .pokemon-info {
     display: flex;
@@ -252,3 +283,11 @@ main {
     padding: .25rem .5rem;
     border-radius: 100vmax;
 }
+
+.mensaje-favoritos {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 2rem;
+    color: var(--clr-black);
+  }
